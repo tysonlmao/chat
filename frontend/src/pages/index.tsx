@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/modules/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import Upload from "../../public/icons/upload.svg";
 
 export default function Home() {
   return (
@@ -15,7 +14,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        a
+          <div className="container fixed-bottom">
+            <div className="container chat">
+              <div className="row d-flex">
+                <div className="col-auto">
+                  <button className="is-icon__upload btn" title="Upload"></button>
+                </div>
+                <div className="col">
+                  chat
+                </div>
+                <div className="col-auto">
+                  <button className="is-icon__send btn" title="Send"></button>
+                </div>
+              </div>
+            </div>
+          </div>
       </main>
     </>
   )

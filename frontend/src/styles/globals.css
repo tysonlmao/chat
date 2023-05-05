@@ -1,5 +1,11 @@
 :root {
-  --background-dark: #2e0249;
+  --background-dark: #443c68;
+}
+
+/* util */
+.reset {
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -8,14 +14,43 @@
   margin: 0;
 }
 
-html,
-body {
+html {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: "Ubuntu Regular", sans-serif;
   background-color: var(--background-dark);
+  color: white;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+main {
+  background-color: var(--background-dark);
+  padding: 2rem;
+}
+
+.chat {
+  color: white;
+  width: 80%;
+  border: 5px solid #00ffc6;
+  background-color: #00ffc630;
+  border-radius: 5px;
+  min-height: 50px;
+  margin-bottom: 1rem;
+}
+
+/* icons */
+.is-icon__upload {
+  min-height: 50px;
+  min-width: 50px;
+  background-image: url("../../public/icons/upload.svg");
+}
+
+.is-icon__send {
+  min-height: 50px;
+  min-width: 50px;
+  background-image: url("../../public/icons/arrow-right-circle.svg");
 }
